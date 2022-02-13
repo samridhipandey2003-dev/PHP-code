@@ -1,0 +1,19 @@
+{
+    "name": "sakshi/autoloader",
+    "description": "This is autoloader package generaed by skahi",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sakshi\\Autoloader\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sakshi",
+            "email": "samridhipandey2003@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}

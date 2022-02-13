@@ -1,0 +1,1 @@
+<h1> This is index.php file </h1>
