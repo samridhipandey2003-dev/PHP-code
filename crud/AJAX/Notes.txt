@@ -1,0 +1,108 @@
+AJAX:
+------
+ajax stands for asynchronous javascript and xml(json).
+ajax will only work under live server environment because ajax responds to the response send by itself.
+This server can like live server
+xampp, laragon server any server infact cli-server
+ajax is useful if you want to perform any any change without refresh within the web-page then 
+ajax is usefull.
+
+syntax:
+-------
+1. using xttp request object using javascript (pro).
+2. using jquery with ajax
+3. fetch Api ES
+
+How to start with ajax
+-----------------------
+we can run ajax request only after, when each and every elements of html is generated
+
+Why?
+because if you target any element by id and that element is not generated due to low internet speed, in that case
+you get null as a target.
+
+$(document).ready(function(){
+
+});
+
+$("selector").method(function9(){
+
+});
+
+b -->id -->btn--->paragraph--->id--->para---->hello
+$(document).ready(function(){
+ $("#btn").click(function(){
+ $("#para").text("hello");
+ });
+});
+
+document.getElementById()
+document.getElementByClassName()
+document.getElementByTagName() //tagname
+document.getElementByName() //name attribute
+querySelectorAll() //anything
+
+<h1 id="h">This is heading</h1>
+$("#h")
+<h1 class="h">This is heading</h1>
+$(".h")
+$("h1")
+<p id="para">This is paragraph
+<span class="font">
+<b>This is bold</b>
+</span>
+</p>
+</h1>
+$("#para .font b")
+
+.innerHTML => .html() get put => .html("hello")
+.innerText => .text() get .text() => .text("hello")
+.src => .attr('src') get .attr('src',"1.png")
+.value => .val() get set .val ("hello")
+.title => .attr('title') get set => .attr('title','sakshi pandey')
+
+Events:
+-------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+syntax of AJAX:-
+----------------
+$.ajax({
+url:"http:/localhost:7000/getemp.php",
+type:"POST|GET"
+data:{key:value},
+dataType:"jsonp|json|formdata|datastring",
+success:function(response){
+
+},
+beforeSend:function(xhr(xmp http request),error){
+
+},
+error:function(xhr,error){
+
+},
+complete:function(response){
+
+},
+cache:true|false,
+async:true|false,
+});
+
+How to verify ajax Request is Running or not.
+goto console menu --> network tab 
+select xhr/fetch
+see the response using preview response.

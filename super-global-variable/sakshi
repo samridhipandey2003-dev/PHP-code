@@ -1,0 +1,61 @@
+<?php
+
+echo 'This is Sakshi Terminal';
+echo PHP_EOL;
+echo 'The sakshi Framework : Version 1.x';
+
+$commands=[
+
+'--help'=>'This is Help Command',
+'--v'=>'1.x',
+'--a'=>'for Addition',
+'--s'=>'for Subtracion',
+'--m'=>'for Multiplication',
+'--d'=>'for Division',
+'--r'=>'for Remainder',
+];
+ echo PHP_EOL;
+foreach($commands as $key => $value){
+      printf("%s\t\t :\t\t %s\n",$key,$value);
+
+}
+$output='';
+if(isset($argv[1])){
+	$command=$argv[1];
+echo "\e[H\e[J";
+switch($command){
+case '--v':
+      $output='1.x';
+      break;
+case '--a':
+$x = readline('Enter a number 1 : ');
+$y = readline('Enter a number 2 : ');
+$output = $x+$y;
+break;
+case '--s':
+$x = readline('Enter a number 1 : ');
+$y = readline('Enter a number 2 : ');
+$output = $x-$y;
+break;
+case '--m':
+$x = readline('Enter a number 1 : ');
+$y = readline('Enter a number 2 : ');
+$output = $x*$y;
+break;
+case '--d':
+$x = readline('Enter a number 1 : ');
+$y = readline('Enter a number 2 : ');
+$output = $x/$y;
+break;
+case '--r':
+$x = readline('Enter a number 1 : ');
+$y = readline('Enter a number 2 : ');
+$output = $x%$y;
+break;
+default:
+$output='Invalid Command Suplied';
+break;
+}
+echo $output;
+}
+?>

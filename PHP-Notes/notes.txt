@@ -1,0 +1,78 @@
+Basic concept related to programing 
+************************************
+1.How to create folder dynamically via data using cmd mkdir %date%
+
+Consept 1
+**********
+A folder name can not contain illegal character like
+/,\,?,*,"",|,:,<>
+ 
+If while runing the cimmans mkdir %date% if you get an error incorrect
+syntax error.
+
+Make sure you date formate dose not contain illegal character 
+/,\,?,*,"",|,:,<>
+
+Basic Story
+************
+PHP is a our technology and php is a server
+https://www.facebook.com :resource
+file:///C:/users/Abhay%20singh/desctop/App-2021/PHP/home-HTML :resource
+
+1. Accordind to client server model
+2. Any thing which is loaded by client (browser) will be called as resource.
+https://www.facebook.com/1.png : resource
+
+Common terms used in Web Tech
+******************************
+1. Human (End user)
+2. God (Server)
+3. Prayer (Request)
+4. Blassing (Response)
+
+How End user going to make a Request
+*************************************
+End user will make a request using url 
+End user will use Browser as a Interface (platform) to make ea request by using url
+
+How many types of request are there
+************************************
+1. Synchronous Request - PHP, PYTHON, .NET, JSP...etc
+2. Asynchronous Request - Ajax, Node.js
+
+Synchronous Request
+********************
+A request in which one event depends on other request to happen such type of 
+request is called synchronous request.
+These request are blocking in nature.
+
+For Example
+************
+1. JS ---> window.alert()
+2. PHP ---> form submit
+
+Asynchronous Request
+*********************
+A request in which one event dose not depend upon other event such type of 
+request is called as asynchronous request.
+These request are non-blocking in nature.
+
+1. Node.js ---> window.alert()
+    R1 ------> wait
+	R2 ------> Process ------> Success
+	R3 ------> wait
+	R4 ------> Process ------> Success
+
+2. PHP
+    R1 ------> wait ------> Success
+	R2 ------> wait ------> Process ------> Success
+	R3 ------> wait ------> Process ------> Success
+	R4 ------> wait ------> Process
+
+Messcoat of PHP 
+****************
+Elephant (Elephpant) By (Vincent Pontier)
+
+
+
+    
